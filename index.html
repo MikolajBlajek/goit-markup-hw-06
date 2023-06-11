@@ -358,14 +358,87 @@
                             </svg>
                         </a>
                     </div>
-                </div> 
+                </div>  
+                <div class="footer-newsletter">   
+                    <p class="text-newsletter-footer">Zapisz się do newslettera</p>
+                    <div class="box-send-newsletter"> 
+                        <form> 
+                            <label class="email-window-footer" for="email"> 
+                                <input type="email" name="email" id="newsletter-email" placeholder="E-mail" required>
+                            </label>
+                        </form> 
+                        <div class="buttom-send-newsletter"> 
+                            <button data-modal-open class="button-newsletter" type="submit">Zapisz się</button> 
+                            <svg class="send-icon-button" width="24px" height="24px"><use href="/goit-markup-hw-06/images/images4/symbol-defs-icon-reg.svg#icon-icon-send"></use></svg>
+                        </div>
+                    </div>
+
+                </div>
         </div>
     </footer>
 </body> 
     <div id="modal-backdrop"  class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-bth" data-modal-close>x</button>
-        </div>
+           
+            <form name="first-form-reg" autocomplete="on" class="form-style">  
+            <h3 class="title-form">Zostaw swoje dane w formularzu poniżej</h3>
+            <div class="box-reg-icon">   
+                
+                    <div class="form-box">
+                        <label>
+                            <p>Imie</p>  
+                            <svg width="12" height="12" class="icon-person-input">
+                                <use href="images/images4/symbol-defs-icon-reg.svg#icon-Vector-person"></use>
+                            </svg>
+                            <input id="name" class="form-input" type="text" name="name" required> 
+                           
+                        </label> 
+                    </div>  
+
+                    <div class="form-box">
+                        <label>
+                            <p>Telefon</p> 
+                            <svg width="13" height="13" class="icon-person-input">
+                                <use href="images/images4/symbol-defs-icon-reg.svg#icon-Vector-phone"></use>
+                            </svg>
+                            <input id="phone" class="form-input" type="tel" name="phone_number" required>
+                           
+                        </label> 
+                    </div>  
+
+                    <div class="form-box">
+                        <label>
+                            <p>Email</p>  
+                            <div class="div-icon-email">
+                                <svg width="15" height="12" class="icon-person-input">
+                                    <use href="images/images4/symbol-defs-icon-reg.svg#icon-Vector-list"></use>
+                                </svg> 
+                            </div> 
+                            <div>
+                                <input id="mail" class="form-input" type="email" name="email" required> 
+                            </div>
+                           
+                        </label> 
+                    </div>  
+
+                    <label for="comment" class="form-label">
+                        <p>Komentarz</p>
+                        <textarea id="comment" name="comment" placeholder="Wprowadź tekst" class="form-input-text"></textarea>
+                    </label>  
+                     
+                    <div class="input-box">
+                    <label class="label-checkbox-policy">
+                        <input type="checkbox" name="" value="" checked />
+                        <div class="checkbox-text">Oświadczam iż akceptuję <a href="">Regulamin</a> i <a href="">Politykę Prywatności</a></div>
+                    </label> 
+                    </div>
+                        <div class="buttom-form-send">
+                        <button type="submit" class="button-main-page">Wyślij</button>
+                        </div>
+                    </div>
+            </form>
+        </div> 
     </div>
     <script src="./js/modal.js"></script>
 </html>

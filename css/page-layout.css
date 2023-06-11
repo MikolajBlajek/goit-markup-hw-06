@@ -214,7 +214,8 @@ text-align: center;
     list-style: none;
     display: flex;
     justify-content: space-around; 
-    cursor: pointer;
+    cursor: pointer; 
+    padding-left: 0;
 }  
 
 /* kontener ze stopą - wzpólna dla wszystkich kart*/ 
