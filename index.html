@@ -386,39 +386,32 @@
             <div class="box-reg-icon">   
                 
                     <div class="form-box">
-                        <label>
-                            <p>Imie</p>  
-                            <svg width="12" height="12" class="icon-person-input">
+                        <label class="label-name" for="name">
+                            <p>Imie</p>   
+                             <svg width="12" height="12" class="icon-person-input">
                                 <use href="images/images4/symbol-defs-icon-reg.svg#icon-Vector-person"></use>
-                            </svg>
+                             </svg>
                             <input id="name" class="form-input" type="text" name="name" required> 
-                           
                         </label> 
                     </div>  
 
                     <div class="form-box">
-                        <label>
-                            <p>Telefon</p> 
-                            <svg width="13" height="13" class="icon-person-input">
-                                <use href="images/images4/symbol-defs-icon-reg.svg#icon-Vector-phone"></use>
-                            </svg>
-                            <input id="phone" class="form-input" type="tel" name="phone_number" required>
-                           
+                        <label class="label-phone" for="phone">
+                            <p>Telefon</p>
+                                <svg width="13" height="13" class="icon-person-input">
+                                    <use href="images/images4/symbol-defs-icon-reg.svg#icon-Vector-phone"></use>
+                                </svg>
+                                <input id="phone" class="form-input" type="tel" name="phone_number" required>
                         </label> 
                     </div>  
 
                     <div class="form-box">
-                        <label>
+                        <label class="label-mail" for="mail">
                             <p>Email</p>  
-                            <div class="div-icon-email">
-                                <svg width="15" height="12" class="icon-person-input">
-                                    <use href="images/images4/symbol-defs-icon-reg.svg#icon-Vector-list"></use>
-                                </svg> 
-                            </div> 
-                            <div>
-                                <input id="mail" class="form-input" type="email" name="email" required> 
-                            </div>
-                           
+                             <svg width="15" height="12" class="icon-person-input">
+                                <use href="images/images4/symbol-defs-icon-reg.svg#icon-Vector-list"></use>
+                            </svg>  
+                             <input id="mail" class="form-input" type="email" name="email" required>     
                         </label> 
                     </div>  
 
@@ -428,9 +421,12 @@
                     </label>  
                      
                     <div class="input-box">
-                    <label class="label-checkbox-policy">
-                        <input type="checkbox" name="checkbox" value="" checked />
-                        <div class="checkbox-text">Oświadczam iż akceptuję <a href="">Regulamin</a> i <a href="">Politykę Prywatności</a></div>
+                    <label class="label-checkbox-policy"> 
+                        <input class="checkbox-input" type="checkbox" name="checkbox" />   
+                            <span class="checkbox-icon">
+                                <svg class="checkbox-vector" width="16" height="15" class="checked"><use href="./images/images4/checked-ok.svg#icon-checked-ok"></svg>
+                            </span>
+                            <div class="checkbox-text">Oświadczam iż akceptuję <a href="">Regulamin</a> i <a href="">Politykę Prywatności</a></div>
                     </label> 
                     </div>
                         <div class="buttom-form-send">
